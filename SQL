@@ -1,0 +1,14 @@
+select * from users
+
+insert into users
+(first_name, last_name, handle)
+values ('Caleb', 'Reyes', 'cakedayy')
+
+UPDATE `twitter`.`users` 
+SET `birthday` = '1997-04-05', 
+`created_at` = 'now()', 
+`updated_at` = 'now()' 
+WHERE (`id` = '6');
+
+delete from users 
+where id = 6
